@@ -4,9 +4,8 @@ package io.reactivesw.catalog.infrastructure;
 
 option java_multiple_files = true;
 option java_package = "io.reactivesw.catalog.grpc";
-import "google/protobuf/empty.proto";
-import "google/protobuf/wrappers.proto";
-import "catalog_sku_message.proto";
+import "catalog_proto/google/protobuf/wrappers.proto";
+import "catalog_proto/catalog_sku_message.proto";
 
 /**
  * sku rpc service.

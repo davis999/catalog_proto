@@ -17,4 +17,7 @@ service SkuService {
 
     //query sku simple information.
     rpc querySkuSimpleInformation (google.protobuf.Int64Value) returns (SkuInformation);
+
+    //query list sku information.
+    rpc querySkuInformationList (SkuIdList) returns (SkuInformationList);
 }

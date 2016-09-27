@@ -7,6 +7,13 @@ option java_multiple_files = true;
 option java_generate_equals_and_hash = true;
 
 /**
+ *response when call querySkuInformationList.
+ */
+message SkuInformationList{
+    repeated SkuInformation sku_information = 1;
+}
+
+/**
  * message for sku.
  * response when call querySkuSimpleInformation.
  */
@@ -16,4 +23,11 @@ message SkuInformation{
     string sku_name = 3;
     string media_url = 4;
     string price = 5;
+}
+
+/**
+ * request message for querySkuSimpleInformation.
+ */
+message SkuIdList{
+    repeated int64 sku_id = 1;
 }

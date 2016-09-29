@@ -4,18 +4,18 @@ package io.reactivesw.catalog.infrastructure;
 
 option java_multiple_files = true;
 option java_package = "io.reactivesw.catalog.grpc";
-import "catalog_proto/google/protobuf/wrappers.proto";
 import "catalog_proto/catalog_sku_message.proto";
+import "catalog_proto/catalog_data_message.proto";
 
 /**
  * sku rpc service.
  */
 service SkuService {
     //query sku inventory by sku id.
-    rpc querySkuInventory (google.protobuf.Int64Value) returns (google.protobuf.Int32Value);
+    rpc querySkuInventory (LongValue) returns (IntValue);
 
     //query sku simple information.
-    rpc querySkuSimpleInformation (google.protobuf.Int64Value) returns (SkuInformation);
+    rpc querySkuSimpleInformation (LongValue) returns (SkuInformation);
 
     //query list sku information.
     rpc querySkuInformationList (SkuIdList) returns (SkuInformationList);

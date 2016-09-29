@@ -107,4 +107,3 @@ message GrpcProduct {
     repeated GrpcVariant variant = 14;
     repeated GrpcFeature feature = 15;
 }
-

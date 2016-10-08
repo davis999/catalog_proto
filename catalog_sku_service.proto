@@ -8,7 +8,7 @@ import "catalog_proto/catalog_sku_message.proto";
 import "catalog_proto/catalog_data_message.proto";
 
 /**
- * sku rpc service.
+ * sku rpc services.
  */
 service SkuService {
     //query sku inventory by sku id.

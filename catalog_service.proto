@@ -8,7 +8,7 @@ import "catalog_proto/catalog_data_message.proto";
 import "catalog_proto/catalog_message.proto";
 
 /**
- * define catelog rpc service.
+ * define catelog rpc services.
  */
 service CategoryService {
     //query all categories and subcategories.
@@ -19,7 +19,7 @@ service CategoryService {
 }
 
 /**
- *  product rpc service.
+ *  product rpc services.
  */
 service ProductService {
     //query all products by id of category

@@ -6,6 +6,8 @@ option java_package = "io.reactivesw.catalog.grpc";
 option java_multiple_files = true;
 option java_generate_equals_and_hash = true;
 
+import "catalog_proto/catalog_product_message.proto";
+
 /**
  *response when call querySkuInformationList.
  */
@@ -18,11 +20,11 @@ message SkuInformationList{
  * response when call querySkuSimpleInformation.
  */
 message SkuInformation{
-    int64 sku_id = 1;
-    string sku_number = 2;
-    string sku_name = 3;
-    string media_url = 4;
-    string price = 5;
+     int64 sku_id = 1;
+     string sku_number = 2;
+     string sku_name = 3;
+     string media_url = 4;
+     string price = 5;
 }
 
 /**
@@ -30,4 +32,22 @@ message SkuInformation{
  */
 message SkuIdList{
     repeated int64 sku_id = 1;
+}
+
+/**
+ * response when call querySkuDetail.
+ */
+message GrpcSkuDetail{
+    int64 id = 1;
+    string manufacturer = 2;
+    string brand = 3;
+    string model = 4;
+    string name = 5;
+    string price = 6;
+    string description = 7;
+    string detail = 8;
+    repeated GrpcFeature feature = 9;
+    repeated GrpcAttribute attribute = 10;
+    repeated GrpcVariant variant = 11;
+    repeated GrpcMedia media = 12;
 }

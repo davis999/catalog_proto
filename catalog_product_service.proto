@@ -5,18 +5,7 @@ package io.reactivesw.catalog.infrastructure;
 option java_multiple_files = true;
 option java_package = "io.reactivesw.catalog.grpc";
 import "catalog_proto/catalog_data_message.proto";
-import "catalog_proto/catalog_message.proto";
-
-/**
- * define catelog rpc services.
- */
-service CategoryService {
-    //query all categories and subcategories.
-    rpc getCategories (Empty) returns (CategoryList);
-
-    //get a category detail.
-    rpc getCategoryById (LongValue) returns (GrpcCategory);
-}
+import "catalog_proto/catalog_product_message.proto";
 
 /**
  *  product rpc services.

@@ -46,6 +46,7 @@ message GrpcSkuDetail{
     string price = 6;
     string description = 7;
     string detail = 8;
+    bool is_active =13;
     repeated GrpcFeature feature = 9;
     repeated GrpcAttribute attribute = 10;
     repeated GrpcVariant variant = 11;

@@ -48,7 +48,7 @@ message GrpcVariant {
 message GrpcVariantValue {
     int64 id = 1;
     string value = 2;
-    bool is_active = 3;
+    bool actived = 3;
     int32 displayOrder = 4;
     string sku_number = 5;
     bool selected = 6;

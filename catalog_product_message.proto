@@ -63,8 +63,8 @@ message GrpcAttribute {
 message GrpcSku {
     int64 id = 1;
     string skuNumber = 2;
-    bool isActive = 3;
-    int32 quatity = 4;
+    bool actived = 3;
+    int32 quantity = 4;
     string upc = 5;
     int32 display_order = 6;
     repeated GrpcMedia media = 7;
@@ -82,6 +82,7 @@ message GrpcProduct {
     string description = 8;
     string detail = 9;
     bool displayed = 10;
+    GrpcSku default_sku = 16;
     bool deleted = 11;
     repeated GrpcAttribute attribute = 12;
     repeated GrpcSku sku = 13;

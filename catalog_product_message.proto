@@ -67,6 +67,7 @@ message GrpcSku {
     int32 quantity = 4;
     string upc = 5;
     int32 display_order = 6;
+    string price = 9;
     repeated GrpcMedia media = 7;
     repeated GrpcVariantValue variant_value = 8;
 }
